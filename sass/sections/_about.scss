@@ -1,0 +1,95 @@
+.about-list__mobile {
+  display: grid;
+  justify-content: center;
+}
+
+.icons-list {
+  display: flex;
+  justify-content: center;
+  background-color: var(--backround-our-team-color);
+  border-radius: 5px;
+  align-items: flex-end;
+  width: 450px;
+  height: 120px;
+
+  &:hover,
+  &:focus {
+    color: var(--hover-focus-color);
+  }
+}
+
+.icons-list_icon {
+  width: 70px;
+  height: 70px;
+  margin: 25px 100px;
+}
+
+.about-list__title {
+  font-weight: 700;
+  font-style: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  vertical-align: top;
+  letter-spacing: 0.03em;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.about-list__text {
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: left;
+
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .about-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+  .icons-list {
+    display: flex;
+    justify-content: center;
+    background-color: var(--backround-our-team-color);
+    border-radius: 5px;
+    align-items: flex-end;
+    width: 270px;
+    height: 120px;
+
+    &:hover,
+    &:focus {
+      color: var(--hover-focus-color);
+    }
+  }
+
+  .icons-list_icon {
+    width: 70px;
+    height: 70px;
+    margin: 25px 100px;
+  }
+
+  .about-list__title {
+    font-weight: 700;
+    font-style: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: 0.03em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .about-list__text {
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+  }
+}

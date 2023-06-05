@@ -1,0 +1,109 @@
+/*footer*/
+.global-footer {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 3%;
+  background-color: var(--backround-title-footer-color);
+
+  height: 604px;
+  padding-top: 60px;
+  padding-left: 215px;
+  padding-right: 215px;
+  padding-bottom: 160px;
+}
+
+.footer-container {
+  display: grid;
+  align-items: baseline;
+  display: grid;
+  justify-content: space-evenly;
+  justify-items: center;
+}
+
+.map-adress {
+  color: var(--backround-text-color);
+  margin-bottom: 12px;
+}
+
+.email-footer {
+  color: var(--email-phone-footer-color);
+  text-decoration: none;
+  margin-bottom: 12px;
+  margin-left: 30px;
+
+  &:hover,
+  &:focus {
+    color: var(--hover-focus-color);
+  }
+}
+
+.phone-footer {
+  color: var(--email-phone-footer-color);
+  text-decoration: none;
+  display: flex;
+  margin-top: 12px;
+  margin-left: 30px;
+
+  &:hover,
+  &:focus {
+    color: var(--hover-focus-color);
+  }
+}
+
+.find-us-on-heading {
+  color: var(--backround-text-color);
+  margin-left: 40px;
+  margin-top: 60px;
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .global-footer {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 3%;
+    background-color: var(--backround-title-footer-color);
+    height: 251px;
+    padding-top: 60px;
+    padding-left: 215px;
+    padding-right: 215px;
+    padding-bottom: 160px;
+  }
+
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .map-adress {
+    color: var(--backround-text-color);
+    margin-bottom: 12px;
+  }
+
+  .email-footer {
+    color: var(--email-phone-footer-color);
+    text-decoration: none;
+    margin-bottom: 12px;
+
+    &:hover,
+    &:focus {
+      color: var(--hover-focus-color);
+    }
+  }
+
+  .phone-footer {
+    color: var(--email-phone-footer-color);
+    text-decoration: none;
+    display: flex;
+    margin-top: 12px;
+
+    &:hover,
+    &:focus {
+      color: var(--hover-focus-color);
+    }
+  }
+
+  .find-us-on-heading {
+    color: var(--backround-text-color);
+    margin-left: 70px;
+  }
+}

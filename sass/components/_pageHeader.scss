@@ -1,0 +1,25 @@
+.global-header {
+  font-weight: 500;
+  font-style: medium;
+  font-size: 14px;
+  line-height: 1.14;
+  background-color: var(--backround-text-color);
+  padding-top: 15px;
+  padding-right: 23px;
+  padding-left: 15px;
+  border: 1px solid #ececec;
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+  .global-header {
+    font-weight: 500;
+    font-style: medium;
+    font-size: 14px;
+    line-height: 1.14;
+    background-color: var(--backround-text-color);
+    padding-top: 24px;
+    padding-right: 215px;
+    padding-left: 215px;
+    border: 1px solid #ececec;
+  }
+}

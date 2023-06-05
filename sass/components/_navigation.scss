@@ -1,0 +1,135 @@
+.container__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.general-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*header-navigatin*/
+.primary-navigation {
+  display: none;
+}
+
+.primary-navigation__link {
+  color: var(--link-text-color);
+  text-align: left;
+  vertical-align: top;
+  letter-spacing: 2%;
+  list-style-type: none;
+  text-decoration: none;
+  margin-left: 50px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  -weblit-transition: width 2s;
+  transition: width 2s;
+  position: relative;
+
+  &:hover,
+  &:focus {
+    color: var(--hover-focus-color);
+    outline: none;
+    width: 30px;
+  }
+
+  &::after {
+    display: none;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    border-bottom: 4px solid;
+    border-radius: 2px;
+    bottom: -2px;
+    left: 0;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    color: var(--hover-focus-color);
+    display: block;
+  }
+}
+
+.nav-list-header {
+  display: flex;
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+  .primary-navigation {
+    display: inline;
+  }
+}
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: #ffffff;
+  z-index: 999;
+  height: 796px;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #212121;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 48px;
+  margin-left: 40px;
+}
+
+.mobile-menu__link {
+  text-decoration: none;
+  color: #212121;
+  font-size: 40px;
+  line-height: 1.17px;
+
+  &:hover,
+  &:focus {
+    color: #2196f3;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,16 @@
+$mobile-breakpoint: 480px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1200px;
+
+:root {
+  --text-font-family: "Roboto", sans-serif;
+  --logo-font-family: "Raleway", sans-serif;
+  --link-text-color: #212121;
+  --text-color: #757575;
+  --backround-text-color: #ffffff;
+  --backround-title-footer-color: #2f303a;
+  --hover-focus-color: #2196f3;
+  --email-phone-footer-color: #ffffff99;
+  --backround-our-team-color: #f5f4fa;
+  --icon-link-color: #afb1b8;
+}

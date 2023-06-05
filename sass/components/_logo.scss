@@ -1,0 +1,39 @@
+/*logo*/
+.logo {
+    font-family: var(--logo-font-family);
+    font-weight: 700;
+    font-style: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    text-align: left;
+    vertical-align: top;
+    letter-spacing: 3%;
+    text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    &:hover,
+    &:focus{
+        .logo__web-part{
+            color: var(--hover-focus-color);
+        }
+        .logo__studio-part{
+            color: var(--hover-focus-color);
+        }
+    }
+  }
+
+  .logo__web-part {
+    color: var(--hover-focus-color);
+  }
+  
+  .logo__studio-part {
+    color: var(--link-text-color);
+  }
+
+  .logo__studio-part--from-footer {
+    color: var(--backround-text-color);
+    margin-bottom: 28px;
+  
+    
+  }
